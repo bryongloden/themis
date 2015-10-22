@@ -1,0 +1,7 @@
+#include "themis.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/themis" "${PODS_ROOT}/Headers/Private/themis/objcthemis" "${PODS_ROOT}/Headers/Private/themis/soter" "${PODS_ROOT}/Headers/Private/themis/soter/ed25519" "${PODS_ROOT}/Headers/Private/themis/soter/openssl" "${PODS_ROOT}/Headers/Private/themis/themis" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/OpenSSL-Universal" "${PODS_ROOT}/Headers/Public/OpenSSL-Universal/openssl" "${PODS_ROOT}/Headers/Public/themis" "${PODS_ROOT}/Headers/Public/themis/objcthemis" "${PODS_ROOT}/Headers/Public/themis/soter" "${PODS_ROOT}/Headers/Public/themis/soter/ed25519" "${PODS_ROOT}/Headers/Public/themis/soter/openssl" "${PODS_ROOT}/Headers/Public/themis/themis"
+OTHER_CFLAGS = ${THEMIS_OTHER_CFLAGS}
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES
+USE_HEADERMAP = ${THEMIS_USE_HEADERMAP}

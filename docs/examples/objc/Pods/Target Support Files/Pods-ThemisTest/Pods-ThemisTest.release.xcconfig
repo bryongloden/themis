@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/OpenSSL-Universal" "${PODS_ROOT}/Headers/Public/OpenSSL-Universal/openssl" "${PODS_ROOT}/Headers/Public/themis" "${PODS_ROOT}/Headers/Public/themis/objcthemis" "${PODS_ROOT}/Headers/Public/themis/soter" "${PODS_ROOT}/Headers/Public/themis/soter/ed25519" "${PODS_ROOT}/Headers/Public/themis/soter/openssl" "${PODS_ROOT}/Headers/Public/themis/themis"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/OpenSSL-Universal/lib-ios" "$(PODS_ROOT)/OpenSSL-Universal/lib-ios"
+OTHER_CFLAGS = -DLIBRESSL $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/OpenSSL-Universal" -isystem "${PODS_ROOT}/Headers/Public/OpenSSL-Universal/openssl" -isystem "${PODS_ROOT}/Headers/Public/themis" -isystem "${PODS_ROOT}/Headers/Public/themis/objcthemis" -isystem "${PODS_ROOT}/Headers/Public/themis/soter" -isystem "${PODS_ROOT}/Headers/Public/themis/soter/ed25519" -isystem "${PODS_ROOT}/Headers/Public/themis/soter/openssl" -isystem "${PODS_ROOT}/Headers/Public/themis/themis"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"crypto" -l"ssl" -l"themis"
+PODS_ROOT = ${SRCROOT}/../Pods

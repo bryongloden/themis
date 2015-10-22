@@ -20,6 +20,7 @@
 #import "scell_seal.h"
 #import "scell_context_imprint.h"
 #import "smessage.h"
+#import "SMessageClient.h"
 
 
 @interface AppDelegate ()
@@ -35,21 +36,25 @@
 
     // Generating/reading keys:
     
-    [self runExampleGeneratingKeys];
-    [self readingKeysFromFile];
+//    [self runExampleGeneratingKeys];
+//    [self readingKeysFromFile];
+//
+//
+//    // Secure Message:
+//
+//    [self runExampleSecureMessageEncryptionDecryption];
+//    [self runExampleSecureMessageSignVerify];
+//
+//
+//    // Secure Cell:
+//
+//    [self runExampleSecureCellSealMode];
+//    [self runExampleSecureCellTokenProtectMode];
+//    [self runExampleSecureCellImprint];
 
-    
-    // Secure Message:
-    
-    [self runExampleSecureMessageEncryptionDecryption];
-    [self runExampleSecureMessageSignVerify];
-    
-    
-    // Secure Cell:
-    
-    [self runExampleSecureCellSealMode];
-    [self runExampleSecureCellTokenProtectMode];
-    [self runExampleSecureCellImprint];
+    // test
+    SMessageClient * client = [SMessageClient new];
+    [client secureMessageCITest];
 
     return YES;
 }
